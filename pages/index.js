@@ -19,7 +19,11 @@ const useStyles = makeStyles({
 export default function Index() {
   const matches = useMediaQuery('(min-width:600px)');
   const classes = useStyles();
-  const days = 0;
+  const moonLanding = new Date('February 23, 2021 18:00:00 GMT-05:00')
+  const now = new Date();
+  const days = Math.floor((now.getTime() - moonLanding.getTime()) / 86400000);
+  console.log(moonLanding);
+  console.log(now)
   return (
     <Container maxWidth="md">
       <Box borderColor="#d68145" border={3} my={4} p={3}>
