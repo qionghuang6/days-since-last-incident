@@ -19,11 +19,18 @@ const useStyles = makeStyles({
 export default function Index() {
   const matches = useMediaQuery('(min-width:600px)');
   const classes = useStyles();
-  const moonLanding = new Date('March 08, 2021 20:40:00 GMT-05:00')
+  const moonLandings = [
+    new Date('February 23, 2021 18:00:00 GMT-05:00'),
+    new Date('March 08, 2021 20:40:00 GMT-05:00'),
+    new Date('March 10, 2021 17:10:00 GMT-05:00')
+  ];
+
+  const moonLanding = moonLandings[moonLandings.length - 1];
   const now = new Date();
   const days = Math.floor((now.getTime() - moonLanding.getTime()) / 86400000);
-  console.log(moonLanding);
-  console.log(now)
+  
+  const allMoonLandings = moonLandings.map(date => <Typography align="center">{date.toString()}<br/></Typography>);
+
   return (
     <Container maxWidth="md">
       <Box borderColor="#d68145" border={3} my={4} p={3}>
@@ -44,6 +51,8 @@ export default function Index() {
       </Box>
       <Typography align="center">this website is a joke. plz no more fire alarms i dont wanna be cold</Typography>
       <br></br>
+      <Typography align="center">Incident History</Typography>
+      {allMoonLandings}
     </Container>
   );
 }
