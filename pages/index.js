@@ -22,7 +22,8 @@ export default function Index() {
   const moonLandings = [
     new Date('February 23, 2021 18:00:00 GMT-05:00'),
     new Date('March 08, 2021 20:40:00 GMT-05:00'),
-    new Date('March 10, 2021 17:10:00 GMT-05:00')
+    new Date('March 10, 2021 17:10:00 GMT-05:00'),
+    new Date('April 2, 2021 15:30:00 GMT-05:00')
   ];
 
   const moonLanding = moonLandings[moonLandings.length - 1];
