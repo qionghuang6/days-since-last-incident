@@ -24,7 +24,8 @@ export default function Index() {
     new Date('March 08, 2021 20:40:00 GMT-05:00'),
     new Date('March 10, 2021 17:10:00 GMT-05:00'),
     new Date('April 2, 2021 15:30:00 GMT-04:00'),
-    new Date('April 13, 2021 15:45:00 GMT-04:00')
+    new Date('April 13, 2021 15:45:00 GMT-04:00'),
+    new Date('April 22, 2021 03:30:00 GMT-04:00')
   ];
 
   const moonLanding = moonLandings[moonLandings.length - 1];
@@ -52,6 +53,7 @@ export default function Index() {
         </Grid>
       </Box>
       <Typography align="center">this website is a joke. plz no more fire alarms i dont wanna be cold</Typography>
+      <Typography align="center">4am? bruh</Typography>
       <br></br>
       <Typography align="center">Incident History</Typography>
       {allMoonLandings}
