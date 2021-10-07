@@ -20,12 +20,7 @@ export default function Index() {
   const matches = useMediaQuery('(min-width:600px)');
   const classes = useStyles();
   const moonLandings = [
-    new Date('February 23, 2021 18:00:00 GMT-05:00'),
-    new Date('March 08, 2021 20:40:00 GMT-05:00'),
-    new Date('March 10, 2021 17:10:00 GMT-05:00'),
-    new Date('April 2, 2021 15:30:00 GMT-04:00'),
-    new Date('April 13, 2021 15:45:00 GMT-04:00'),
-    new Date('April 22, 2021 03:30:00 GMT-04:00')
+    new Date('September 22, 2021 18:00:00 GMT-05:00'),
   ];
 
   const moonLanding = moonLandings[moonLandings.length - 1];
@@ -36,10 +31,10 @@ export default function Index() {
 
   return (
     <Container maxWidth="md">
-      <Box borderColor="#d68145" border={3} my={4} p={3}>
-        <Box bgcolor="#d68145"><Typography className={classes.white} variant={matches ? "h1" : "h3"}align="center" >SAFETY FIRST</Typography></Box>
+      <Box borderColor="#bc4a3c" border={3} my={4} p={3}>
+        <Box bgcolor="#bc4a3c"><Typography className={classes.white} variant={matches ? "h1" : "h3"}align="center" >SAFETY FIRST</Typography></Box>
         <Typography align="center" className={matches ? classes.days : classes.daySmall}>{days} Days</Typography>
-        <Typography align="center" variant="h4">Time Since Last Incident at New Vassar</Typography>
+        <Typography align="center" variant="h4">Time Since Last Incident at Masseh</Typography>
         <br></br>
         <Grid
           container
